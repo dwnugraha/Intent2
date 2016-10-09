@@ -1,7 +1,6 @@
 package id.sch.smktelkom_mlg.learn.intent2;
 
 import android.content.Intent;
-import android.icu.util.Calendar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +26,7 @@ public class InputActivity extends AppCompatActivity {
                         String thnLhrStr = etThnLhr.getText().toString();
 
                         int thnLhr = thnLhrStr.isEmpty()?
-                                Calendar.getInstance().get(Calendar.YEAR):
+                                java.util.Calendar.getInstance().get(java.util.Calendar.YEAR):
                                 Integer.parseInt(thnLhrStr);
 
                         Intent intent = new Intent();
